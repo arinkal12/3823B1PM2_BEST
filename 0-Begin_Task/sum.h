@@ -1,3 +1,4 @@
 int sum(int a, int b) {
-    return a+b; // Not implementation
+    int res = a+b;
+    return res; // Not implementation
 }
