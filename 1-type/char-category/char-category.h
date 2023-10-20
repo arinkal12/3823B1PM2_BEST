@@ -2,18 +2,21 @@
 
 
 bool is_digit(char x) {
-    return true; // No implementation
+    return ("0" <= x && x <= "9");
 }
 
 bool is_letter(char x) {
-    return true; // No implementation
+    return ((x>="a" && x<= "z")||(x>="A" && x<= "Z")); // No implementation
 }
 
 bool is_punctuation(char x) {
-    return true; // No implementation
+    return ((x>="!" && x<= "/")|| (x>=":" && x<= "@")||(x>="[" && x<= "`")||(x>="{" && x<= "~")); // No implementation
 }
 
 int get_ascii_code(char first, char second, char third) {
-    return 0; // No implementation
+    int f,s,t;
+    //f = int(first);
+    //if 
+    //return ; 
 }
 
