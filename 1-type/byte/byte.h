@@ -8,12 +8,17 @@
 */
 
 
-unsigned char max_byte(unsigned short) {
-    int ch,ost;
-    while (ch<2)
-    {
-     ost = ch%2;   
-    }
+unsigned char max_byte(unsigned short number) {
+    unsigned char result = 0;
+    unsigned short mask = 1;
+
+    for (int i = 0; i < 8; i++) {
+      if ((number & mask) > result) {
+          result = number & mask;
+      }
+      mask <<= 1;
+  }
+
+  return result;
     
-    return 0; 
 }

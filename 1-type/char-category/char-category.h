@@ -2,21 +2,29 @@
 #include <ctype.h>
 
 bool is_digit(char x) {
-    return ('0' <= x && x <= '9');
+    //char smiley = '☺';
+    //int ascii_code = (int)smiley;
+    return  ((x >= '0' && x <= '9'));
+    
 }
 
 bool is_letter(char x) {
-    return (('a' <= x && x <= 'z') || ('A' <= x && x <= 'Z'));
+    return ((x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z'));
 }
 
 bool is_punctuation(char x) {
-    return (('!' <= x && x <= '/') || (':' <= x && x <= '@') || ('[' <= x && x <= '`') || ('{' <= x && x <= '~'));
+    
+    return ( ((x >= '!' && x<= '/') || (x>= ':' && x <= '@') || (x>='[' && x<= '`') || (x>='{' && x<='~'))); 
+    //|| (x=='!') || (x=='"') || (x=='#') || (x=='!') || (x=='"') || (x=='$') || (x=='!') || (x=='"') || (x=='#') || (x == '%') ||(x == '&')||(x == '(') || (x =='\'') ||(x == ')') ||(x == '*')||(x == '+') ||(x == ',') ||(x == '-') ||(x == '.') ||(x == '/') );
 }
 
+ //char ylib = 'u263A';
+
 int get_ascii_code(char first, char second, char third) {
-    int f,s,t;
-    //f = int(first);
-    //if 
-    //return ; 
+    int result = first;  
+    result = (result * 1000) + second;  
+    result = (result * 1000) + third;  
+
 }
+
 
