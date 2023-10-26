@@ -1,3 +1,8 @@
 int LeapYear(int year){
-    return 0;
+    if (year%4==0){
+        return 1;
+    }
+    else{
+        return 0;
+    }
 }
