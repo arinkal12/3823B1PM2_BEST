@@ -1,11 +1,20 @@
 bool compare_double(double x, double y) {
-    return true; // Not implementation
+    double pogr = 0.1
+    #include <math.h>
+    if ((abs(x) - abs(y))<=pogr){
+        return true; 
+    }
+    else {
+        return false;
+    }
 }
-
 int get_nearest_int(double x) {
-    return 0; // Not implementation
+    #include <math.h>
+    return (int)round(x);
 }
 
 double get_fractional(double x) {
-    return 0.1; // Not implementation
+    #include <math.h>
+    return fmod(x,1.0);
 }
+
