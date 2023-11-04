@@ -1,5 +1,7 @@
 #include <math.h>
 
 char find_digit(double number, char digit){
-    return 100;
+    if ((digit<0)||(digit>10)) return -1;
+    
+    
 }
