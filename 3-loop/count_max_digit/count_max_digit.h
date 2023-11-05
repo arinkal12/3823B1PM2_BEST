@@ -3,24 +3,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-<<<<<<< HEAD
-char count_max_digit(long long int num){
-    if (num<0) num = num*(-1);
-    long long int cisl = num;
-    int max = 0;
-    int count = 0;
-    while(num!=0){
-        if ( max <(num%10)) {
-            max = num%10;
-        }
-        num/=10;     
-    }
-    while(cisl!=0){
-        if (max == (cisl%10)) count++;
-        cisl/=10;
-    }
-
-=======
 char count_max_digit(long long int number){
 
     long long int maks = 0;
@@ -53,6 +35,5 @@ char count_max_digit(long long int number){
     }
 
 
->>>>>>> 97e3d84d0d468907da135b1ca1017c02e3adc962
     return count;
 }
