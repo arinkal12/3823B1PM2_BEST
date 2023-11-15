@@ -1,10 +1,12 @@
 #include <math.h>
 
 int determinant(int matrix[], int size){
+    int determi =0;
     int sum = 0;
-    int det = 0;
+    
     int long a,s,d,f;
     int res =0;
+    double det;
     if (size == 12) return -404;
     else if (size == 4) return (matrix[0]*matrix[3]- matrix[2]*matrix[1]);
     
@@ -41,13 +43,16 @@ int determinant(int matrix[], int size){
     }
    
     else if (size == 25){
-        return  matrix[0] * (matrix[6] * (matrix[12] * (matrix[18] * matrix[24] - matrix[19] * matrix[23]) - matrix[13] * (matrix[17] * matrix[24] - matrix[19] * matrix[22]) + matrix[14] * (matrix[17] * matrix[23] - matrix[18] * matrix[22])) - 
-                     matrix[7] * (matrix[11] * (matrix[12] * (matrix[18] * matrix[24] - matrix[19] * matrix[23]) - matrix[13] * (matrix[17] * matrix[24] - matrix[19] * matrix[22]) + matrix[14] * (matrix[17] * matrix[23] - matrix[18] * matrix[22])) - 
-                     matrix[15] * (matrix[8] * (matrix[12] * (matrix[18] * matrix[24] - matrix[19] * matrix[23]) - matrix[13] * (matrix[17] * matrix[24] - matrix[19] * matrix[22]) + matrix[14] * (matrix[17] * matrix[23] - matrix[18] * matrix[22])) - 
-                                   matrix[16] * (matrix[8] * (matrix[17] * matrix[24] - matrix[19] * matrix[22]) - matrix[13] * (matrix[16] * matrix[24] - matrix[19] * matrix[21]) + matrix[14] * (matrix[16] * matrix[23] - matrix[17] * matrix[21])) + 
-                     matrix[10] * (matrix[12] * (matrix[15] * matrix[24] - matrix[16] * matrix[23]) - matrix[13] * (matrix[14] * matrix[24] - matrix[16] * matrix[22]) + matrix[14] * (matrix[14] * matrix[23] - matrix[15] * matrix[22])))) + 
-                     matrix[20] * (matrix[11] * (matrix[17] * matrix[22] - matrix[18] * matrix[21]) - matrix[13] * (matrix[17] * matrix[20] - matrix[18] * matrix[19]) + matrix[14] * (matrix[16] * matrix[20] - matrix[17] * matrix[18])));
+        det= matrix[0] * (matrix[6] * (matrix[12] * (matrix[18] * matrix[24] - matrix[19] * matrix[23]) - matrix[13] * (matrix[17] * matrix[24] - matrix[19] * matrix[22]) + matrix[14] * (matrix[17] * matrix[23] - matrix[18] * matrix[22])) -  
+                    matrix[7] * (matrix[11] * (matrix[12] * (matrix[18] * matrix[24] - matrix[19] * matrix[23]) - matrix[13] * (matrix[17] * matrix[24] - matrix[19] * matrix[22]) + matrix[14] * (matrix[17] * matrix[23] - matrix[18] * matrix[22])) -  
+                    matrix[15] * (matrix[8] * (matrix[12] * (matrix[18] * matrix[24] - matrix[19] * matrix[23]) - matrix[13] * (matrix[17] * matrix[24] - matrix[19] * matrix[22]) + matrix[14] * (matrix[17] * matrix[23] - matrix[18] * matrix[22])) -  
+                                matrix[16] * (matrix[8] * (matrix[17] * matrix[24] - matrix[19] * matrix[22]) - matrix[13] * (matrix[16] * matrix[24] - matrix[19] * matrix[21]) + matrix[14] * (matrix[16] * matrix[23] - matrix[17] * matrix[21])) +  
+                    matrix[10] * (matrix[12] * (matrix[15] * matrix[24] - matrix[16] * matrix[23]) - matrix[13] * (matrix[14] * matrix[24] - matrix[16] * matrix[22]) + matrix[14] * (matrix[14] * matrix[23] - matrix[15] * matrix[22])))) +  
+                    matrix[20] * (matrix[11] * (matrix[17] * matrix[22] - matrix[18] * matrix[21]) - matrix[13] * (matrix[17] * matrix[20] - matrix[18] * matrix[19]) + matrix[14] * (matrix[16] * matrix[20] - matrix[17] * matrix[18])));
+        return det;
     }
+  
+    
    
     
 
