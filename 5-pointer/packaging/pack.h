@@ -3,9 +3,20 @@
 
 
 unsigned long long pack_ull(unsigned char arr[], int size){
-    return 100;
-}
+   if (size > 8) {
+        return 0;  
+    }
+
+    unsigned long long packedValue = 0;
+
+    for (int i = 0; i < size; i++) {
+        packedValue |= (unsigned long long)arr[i] << (i * 8);  // Упаковываем данные
+    } 
+    return  packedValue;
+} 
 
 unsigned char unpack_ull(unsigned long long input){
-    return 5;
+    unsigned char res = input >> 32;
+    return res;
 }
+
