@@ -1,4 +1,6 @@
 #include <math.h>
+#include <stdint.h> 
+
 
 unsigned long long pack_ull(unsigned char arr[], int size){
     return 100;
