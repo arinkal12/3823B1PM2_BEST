@@ -1,4 +1,5 @@
 #include <math.h>
+#include <stdlib.h>
 
 void transform(double* array, int size, int* comands, int comands_count){
     double sr_ar = 0.0;
