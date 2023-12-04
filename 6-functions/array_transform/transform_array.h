@@ -21,8 +21,13 @@ void transform(double* array, int size, int* comands, int comands_count){
             }
         }
         if (comands[i] == 3){
-            for(int e = 0; e<size;e++){
-                array[e] = pow(fabs(array[e]),sr_ar);
+            double sum=0;
+            for (int i=0; i<size; i++){
+                sum+=array[i];  
+            }
+
+            for (int i=0; i<size; i++){
+                array[i]=pow((fabs)(array[i]),(sum/size));
             }
 
         }
