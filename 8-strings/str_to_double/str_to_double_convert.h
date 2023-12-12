@@ -1,6 +1,10 @@
 #include <math.h>
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 double convert(char num[]){
-    return 0.0;
+    double result = atof(num); 
+    return result;
 }
+
