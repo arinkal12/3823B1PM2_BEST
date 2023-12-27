@@ -4,7 +4,8 @@
 #include <stdlib.h>
 
 char* convert(double number){
-    char* str =(char*)malloc(20 * sizeof(char));
+    
+    char* str =(char*)malloc(100 * sizeof(char));
     sprintf(str, "%f", number); 
     return str;
 }

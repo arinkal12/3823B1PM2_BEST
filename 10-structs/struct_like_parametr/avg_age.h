@@ -19,5 +19,13 @@ typedef struct
 
 
 double calc_avg_age(Person* persons, int num_persons){
-    return 0.0;
+    double sr_vozr = 0;
+    int god = 2023;
+    //int god_chel = 0;
+    for(int i = 0; i<num_persons;i++){
+        int god_chel = god - persons[i].borndate.year;
+        sr_vozr+=god_chel;
+
+    }
+    return sr_vozr/num_persons;
 }
